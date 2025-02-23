@@ -1,0 +1,28 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/usedptdatabase?useSSL=false
+    username: root
+    password: 123456
+  mvc:
+    dispatch-options-request: true
+    hiddenmethod:
+      filter:
+        enabled: true
+
+
+  web:
+    resources:
+      static-locations: classpath:/avatar/**
+  servlet:
+    multipart:
+      max-file-size: 300000MB
+      max-request-size: 300000MB
+
+server:
+  port: 8083
+
+
+
+
